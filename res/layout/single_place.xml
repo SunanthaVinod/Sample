@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:keepScreenOn="true"
+    android:background="@drawable/gradient_bg">
+ 
+    <!-- Name Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:text="Name:"
+        android:textStyle="bold" />
+ 
+    <!--  Name Value -->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+ 
+    <!-- Address Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="15dip"
+        android:text="Address:"
+        android:textStyle="bold" />
+ 
+    <!--  Address Value -->
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+ 
+    <!-- Phone Number Label -->
+
+      <RelativeLayout
+          android:id="@+id/linearLayout1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"/>
+
+    <ImageButton
+        android:id="@+id/imgb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/telephone" />
+
+
+    
+</RelativeLayout>
+    <!-- Location Value -->
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="15dip" />
+    
+     <TextView
+         android:id="@+id/website"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dip"
+         android:layout_marginTop="20dip" />
+
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal" >
+
+         <TextView
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:text="Rating:"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/rating1"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content" />
+
+         <RatingBar
+             android:id="@+id/ratingBar"
+             style="?android:attr/ratingBarStyleSmall"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="60dp"
+             android:isIndicator="true"
+             android:numStars="5" />
+     </LinearLayout>
+
+    <!--   <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="15dip"
+        android:text="Show Route:"
+        android:textStyle="bold" />
+     
+        <ImageButton
+        android:id="@+id/maproute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:src="@drawable/maps" />
+        
+        
+        <Button 
+           android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"/>-->
+
+    
+</LinearLayout>
